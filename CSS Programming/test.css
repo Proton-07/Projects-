@@ -1,0 +1,28 @@
+/*learn more about static, fixed, relative, absolute, and sticky image which is discussed in 1st class of style.css learn more..*/
+
+
+body {
+           background: peachpuff;
+           font-style: bold;
+           font-style: italic;
+           font-family: Verdana, Geneva, Tahoma, sans-serif; 
+           
+}
+
+h1 {
+           color: blue;
+           text-decoration: underline;
+           border: 15px inset darkmagenta;
+           border-radius: 100px;
+           border-top: 18px inset orange ;
+           border-right: 24px solid white;
+           border-bottom: 20px inset darkgreen;
+           border-left: 22px solid white;
+           margin-top: 80px;
+           padding: 50px;
+           text-align: center;
+           
+           
+
+
+}
