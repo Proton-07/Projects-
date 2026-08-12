@@ -1,3 +1,6 @@
+//PRACTICAL 8
+//Program to find the roots of the quadratic equation
+
 #include <stdio.h>
 #include <math.h>
 
