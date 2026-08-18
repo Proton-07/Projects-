@@ -22,29 +22,7 @@
                return 0;
                                }                          
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                               
 
 //PRACTICAL 8
 //Program to find the roots of the quadratic equation
