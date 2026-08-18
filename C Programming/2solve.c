@@ -1,5 +1,5 @@
-//PRACTICAL 7
-//Program  to find the sum of individual digits of a given positive integer
+// PRACTICAL 7
+// Program  to find the sum of individual digits of a given positive integer.
 
 /*
 #include <stdio.h>
@@ -24,8 +24,8 @@
 
                                
 
-//PRACTICAL 8
-//Program to find the roots of the quadratic equation
+// PRACTICAL 8
+// Program to find the roots of the quadratic equation.
 /*
 #include <stdio.h>
 #include <math.h>
@@ -68,6 +68,9 @@
 
 
 
+
+// PRACTICAL 9
+// Write a program to find the largest of two numbers using if.              
                #include <stdio.h>
                         int main ()      {
 
