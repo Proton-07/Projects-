@@ -1,7 +1,7 @@
 //PRACTICAL 7
 //Program  to find the sum of individual digits of a given positive integer
 
-
+/*
 #include <stdio.h>
 
      int main ()        {
@@ -19,8 +19,8 @@
  
             printf("SUM OF INDIVIDUAL DIGITS ARE =  %d \n" , sum );
 
-               return 0;
-                               }                          
+                return 0;
+}                 */
 
                                
 
@@ -65,6 +65,32 @@
 
                   return 0;
                }                          */
+
+
+
+               #include <stdio.h>
+                        int main ()      {
+
+                                   int a,b;
+                                   printf("Enter A and B \n");
+                                   scanf("%d %d" , &a , &b);
+
+                                   if (a > b)
+                                   {
+                                    printf("LARGEST NUMBER IS A = %d \n",a);
+                                   }
+
+                                   else if (b > a)
+                                   {
+                                    printf("LARGEST NUMBER IS B = %d \n",b);
+                                   }
+                                   else 
+                                   {
+                                   printf("BOTH NUMBERS ARE EQUAL THUS CAN'T TELL WHICH IS THE GREATEST NUMBER \n");
+                                   }
+
+                           return 0;
+                        }
 
 
 
