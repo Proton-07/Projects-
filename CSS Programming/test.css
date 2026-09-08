@@ -1,0 +1,31 @@
+/*learn more about static, fixed, relative, absolute, and sticky image which is discussed in 1st class of style.css learn more..*/
+
+
+body {
+           background: peachpuff;
+           font-style: bold;
+           font-style: italic;
+           font-family: 'Times New Roman', Times, serif;
+
+
+           
+}
+
+h1 {
+    background: darkred;
+    color: white;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 30px;
+
+    transition: all 0.4s ease;
+}
+
+h1:hover {
+    background: darkgreen;
+    color: black;
+    transform: translateY(-10px) scale(1.03);
+    box-shadow:
+    0 5px 10px darkorange,
+    0 0 20px violet;
+}
