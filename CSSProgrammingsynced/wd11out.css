@@ -1,0 +1,723 @@
+/* =====================================================
+FLOATING / 3D WEBSITE EFFECTS
+===================================================== */
+
+/* -----------------------------------------------------
+BODY BACKGROUND
+----------------------------------------------------- */
+
+body {
+
+background:
+    radial-gradient(
+        circle at 10% 20%,
+        rgba(11, 78, 162, 0.08),
+        transparent 30%
+    ),
+
+    radial-gradient(
+        circle at 90% 80%,
+        rgba(29, 123, 209, 0.08),
+        transparent 30%
+    ),
+
+    #f5f7fb;
+
+overflow-x: hidden;
+
+}
+
+/* =====================================================
+FLOATING HEADER
+===================================================== */
+
+header {
+
+position: sticky;
+
+top: 15px;
+
+width: 94%;
+
+margin: 0 auto;
+
+border-radius: 18px;
+
+background:
+    rgba(255, 255, 255, 0.88);
+
+backdrop-filter: blur(18px);
+
+-webkit-backdrop-filter: blur(18px);
+
+box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.10);
+
+border:
+    1px solid rgba(255, 255, 255, 0.7);
+
+transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+}
+
+/* Header gently lifts when hovered */
+
+header:hover {
+
+transform:
+    translateY(-3px);
+
+box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.14);
+
+}
+
+/* =====================================================
+LOGO 3D
+===================================================== */
+
+.logo-circle {
+
+box-shadow:
+    0 8px 0 #07346f,
+    0 15px 25px rgba(11, 78, 162, 0.35);
+
+transition:
+    transform 0.4s ease;
+
+}
+
+.logo-circle:hover {
+
+transform:
+    translateY(-5px)
+    rotate(-8deg);
+
+}
+
+/* =====================================================
+HERO - FLOATING ENVIRONMENT
+===================================================== */
+
+.hero {
+
+position: relative;
+
+min-height: 720px;
+
+margin-top: 15px;
+
+border-radius: 30px;
+
+width: 94%;
+
+margin-left: auto;
+
+margin-right: auto;
+
+overflow: hidden;
+
+box-shadow:
+    0 35px 80px rgba(0, 0, 0, 0.20);
+
+}
+
+/* -----------------------------------------------------
+Decorative floating light
+----------------------------------------------------- */
+
+.hero::before {
+
+content: "";
+
+position: absolute;
+
+width: 300px;
+
+height: 300px;
+
+border-radius: 50%;
+
+background:
+    rgba(70, 160, 255, 0.18);
+
+filter: blur(5px);
+
+top: -100px;
+
+left: -100px;
+
+animation:
+    floatingLight 7s ease-in-out infinite;
+
+}
+
+.hero::after {
+
+content: "";
+
+position: absolute;
+
+width: 250px;
+
+height: 250px;
+
+border-radius: 50%;
+
+background:
+    rgba(255, 255, 255, 0.08);
+
+right: 15%;
+
+bottom: -120px;
+
+animation:
+    floatingLight 9s ease-in-out infinite reverse;
+
+}
+
+@keyframes floatingLight {
+
+0% {
+
+    transform:
+        translate3d(0, 0, 0);
+
+}
+
+50% {
+
+    transform:
+        translate3d(30px, -25px, 0);
+
+}
+
+100% {
+
+    transform:
+        translate3d(0, 0, 0);
+
+}
+
+}
+
+/* =====================================================
+HERO CONTENT FLOAT
+===================================================== */
+
+.hero-content {
+
+animation:
+    heroContentFloat 5s ease-in-out infinite;
+
+}
+
+@keyframes heroContentFloat {
+
+0% {
+
+    transform:
+        translateY(0);
+
+}
+
+50% {
+
+    transform:
+        translateY(-8px);
+
+}
+
+100% {
+
+    transform:
+        translateY(0);
+
+}
+
+}
+
+/* =====================================================
+HERO IMAGE - REAL 3D CARD
+===================================================== */
+
+.hero-image {
+
+transform:
+    perspective(1200px)
+    rotateY(-7deg)
+    rotateX(3deg)
+    translateZ(20px);
+
+transition:
+    transform 0.7s ease,
+    box-shadow 0.7s ease;
+
+box-shadow:
+
+    0 20px 30px rgba(0, 0, 0, 0.15),
+
+    0 45px 80px rgba(0, 0, 0, 0.30);
+
+animation:
+    imageFloat 6s ease-in-out infinite;
+
+}
+
+/* Floating image animation */
+
+@keyframes imageFloat {
+
+0% {
+
+    transform:
+        perspective(1200px)
+        rotateY(-7deg)
+        rotateX(3deg)
+        translateY(0)
+        translateZ(20px);
+
+}
+
+50% {
+
+    transform:
+        perspective(1200px)
+        rotateY(-4deg)
+        rotateX(1deg)
+        translateY(-15px)
+        translateZ(35px);
+
+}
+
+100% {
+
+    transform:
+        perspective(1200px)
+        rotateY(-7deg)
+        rotateX(3deg)
+        translateY(0)
+        translateZ(20px);
+
+}
+
+}
+
+/* Stop the animation slightly when hovering */
+
+.hero-image:hover {
+
+animation-play-state: paused;
+
+transform:
+    perspective(1200px)
+    rotateY(0deg)
+    rotateX(0deg)
+    scale(1.02)
+    translateZ(50px);
+
+box-shadow:
+
+    0 35px 50px rgba(0, 0, 0, 0.20),
+
+    0 60px 100px rgba(0, 0, 0, 0.35);
+
+}
+
+/* =====================================================
+FLOATING INFORMATION CARD
+===================================================== */
+
+.floating-card {
+
+animation:
+    floatingCard 4s ease-in-out infinite;
+
+transform:
+    translateZ(50px);
+
+}
+
+@keyframes floatingCard {
+
+0% {
+
+    transform:
+        translateY(0)
+        rotate(0deg);
+
+}
+
+50% {
+
+    transform:
+        translateY(-14px)
+        rotate(1deg);
+
+}
+
+100% {
+
+    transform:
+        translateY(0)
+        rotate(0deg);
+
+}
+
+}
+
+/* =====================================================
+QUICK INFO CARDS
+===================================================== */
+
+.info-card {
+
+transform:
+    translateY(0);
+
+transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+}
+
+.info-card:hover {
+
+transform:
+    translateY(-12px)
+    scale(1.02);
+
+box-shadow:
+
+    0 20px 35px rgba(0, 0, 0, 0.14),
+
+    0 5px 10px rgba(11, 78, 162, 0.10);
+
+}
+
+/* =====================================================
+ICON FLOAT
+===================================================== */
+
+.icon {
+
+transition:
+    transform 0.4s ease;
+
+}
+
+.info-card:hover .icon {
+
+transform:
+    translateY(-5px)
+    rotate(-8deg)
+    scale(1.12);
+
+}
+
+/* =====================================================
+PROGRAM CARDS
+===================================================== */
+
+.program-card {
+
+transform:
+    perspective(1000px)
+    translateY(0);
+
+transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease;
+
+}
+
+.program-card:hover {
+
+transform:
+    perspective(1000px)
+    translateY(-18px)
+    rotateX(4deg)
+    rotateY(-2deg)
+    scale(1.02);
+
+box-shadow:
+
+    0 30px 50px rgba(0, 0, 0, 0.15),
+
+    0 10px 20px rgba(11, 78, 162, 0.10);
+
+}
+
+/* =====================================================
+PROGRAM NUMBER
+===================================================== */
+
+.program-number {
+
+transition:
+    transform 0.4s ease;
+
+}
+
+.program-card:hover .program-number {
+
+transform:
+    translateZ(30px)
+    translateY(-5px);
+
+}
+
+/* =====================================================
+FACILITY CARDS
+===================================================== */
+
+.facility-card {
+
+transform:
+    translateY(0);
+
+transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+
+}
+
+.facility-card:hover {
+
+transform:
+    translateY(-12px);
+
+box-shadow:
+
+    0 30px 55px rgba(0, 0, 0, 0.20);
+
+}
+
+/* =====================================================
+NOTICE CARDS
+===================================================== */
+
+.notice-item {
+
+transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+}
+
+.notice-item:hover {
+
+transform:
+    translateX(10px)
+    translateY(-3px);
+
+box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.10);
+
+}
+
+/* =====================================================
+BUTTON 3D EFFECT
+===================================================== */
+
+.primary-btn,
+.secondary-btn {
+
+transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+}
+
+.primary-btn:hover {
+
+transform:
+    translateY(-5px);
+
+box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.20);
+
+}
+
+.secondary-btn:hover {
+
+transform:
+    translateY(-5px);
+
+}
+
+/* =====================================================
+SECTION DEPTH
+===================================================== */
+
+.about,
+.programs,
+.facilities,
+.notice {
+
+position: relative;
+
+}
+
+/* =====================================================
+STATISTICS 3D
+===================================================== */
+
+.stat {
+
+transition:
+    transform 0.4s ease;
+
+}
+
+.stat:hover {
+
+transform:
+    translateY(-8px)
+    scale(1.03);
+
+}
+
+/* =====================================================
+FOOTER
+===================================================== */
+
+footer {
+
+position: relative;
+
+box-shadow:
+    0 -20px 50px rgba(0, 0, 0, 0.08);
+
+}
+
+/* =====================================================
+MOBILE RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+header {
+
+    position: sticky;
+
+    top: 8px;
+
+    width: 94%;
+
+    border-radius: 14px;
+
+}
+
+
+.hero {
+
+    width: 94%;
+
+    min-height: auto;
+
+    margin-top: 10px;
+
+    border-radius: 20px;
+
+    padding-bottom: 90px;
+
+}
+
+
+.hero-content {
+
+    animation:
+        heroContentFloat 6s ease-in-out infinite;
+
+}
+
+
+.hero-image {
+
+    transform: none;
+
+    animation:
+        mobileImageFloat 5s ease-in-out infinite;
+
+}
+
+
+@keyframes mobileImageFloat {
+
+    0% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-8px);
+
+    }
+
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+.hero-image:hover {
+
+    transform:
+        scale(1.02);
+
+}
+
+
+.floating-card {
+
+    right: 15px;
+
+    bottom: 30px;
+
+}
+
+
+.info-card:hover {
+
+    transform:
+        translateY(-6px);
+
+}
+
+
+.program-card:hover {
+
+    transform:
+        translateY(-8px)
+        scale(1.01);
+
+}
+
+
+.facility-card:hover {
+
+    transform:
+        translateY(-7px);
+
+}
+
+
+.notice-item:hover {
+
+    transform:
+        translateY(-3px);
+
+}
+
+}

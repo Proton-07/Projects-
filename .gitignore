@@ -1,1 +1,12 @@
-C Programming/hand_controller/
+# Private AI project
+CProgrammingsynced/hand_controller/
+
+# C/C++ compiled executables
+*.out
+a.out
+2solve
+test
+01_variables
+boilerplate
+comments
+escapesequence
