@@ -1,0 +1,16 @@
+//SINGLE LINE AND MULTILINE COMMENTS ARE USED IN THIS CODE
+#include <stdio.h>
+
+       int main()
+{
+
+    //SINGLE LINE COMMENT 
+    printf("HELLO SINGLE LINE AND MULTILINE COMMENTS \n");
+
+    //SINGLE LINE COMMENT 
+    /*MULTIPLE LINE COMMENT 
+    2ND LINE 
+    */
+
+    return 0;
+}
