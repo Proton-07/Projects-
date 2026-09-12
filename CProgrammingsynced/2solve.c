@@ -1,3 +1,7 @@
+//                                  PRACTICALS FROM ( 7 - 9 ) 
+
+// UNCOMMENT FOR THE CODE RUN 
+
 // PRACTICAL 7
 // Program  to find the sum of individual digits of a given positive integer.
 
@@ -95,6 +99,11 @@
                            return 0;
                         }
 
+
+
+
+
+//                                     - END OF THIS FILE -                         
 
 
 

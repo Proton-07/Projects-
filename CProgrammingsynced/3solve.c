@@ -1,3 +1,7 @@
+//                               PRACTICALS FROM ( 10 - 27 ) 
+
+// UNCOMMENT FOR THE CODE RUN 
+
 // PRACTICAL 10
 // Write a C program to generate prime numbers between 1 and n.
 
@@ -629,3 +633,9 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+//                                     - END OF THIS FILE -

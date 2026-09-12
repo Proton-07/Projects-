@@ -1,25 +1,6 @@
-//UNCOMMENT FOR THE CODE RUN 
+//                               PRACTICALS FROM ( 1 - 6 )                             
 
-
-//SAMPLE CODE JUST FOR THE TEST :-
-//THIS CODE IS FOR THE ASCII CHAARACTER CONVERSION TO NUMBER:- 
-/*
-#include <stdio.h>
-
-   int main ()      {
-
-      char ch;
-
-      printf("ENTER YOUR CHARACTER \n");
-      scanf("%c",&ch);
- 
-      printf("YOUR ASCII VALUE OF %c = %d\n",ch,ch);
-
-     return 0;
-   }*/
-
-
-
+// UNCOMMENT FOR THE CODE RUN 
 
 
 // Write a program to find and display the ASCII value of a given character :-
@@ -211,4 +192,6 @@
           return 0;
      }       */
 
-   
+
+
+//                                      - END OF THIS FILE -   
