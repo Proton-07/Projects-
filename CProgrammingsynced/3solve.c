@@ -31,7 +31,7 @@ int main() {
     printf("\n");
 
     return 0;
-}                 */
+}                                 */
 
 
 // PRACTICAL 11
@@ -598,7 +598,7 @@ int main() {
 // PRACTICAL 27
 // Write a C program to reverse the elements of an array using pointers. 
 
-
+/*
 #include <stdio.h>
 
 int main() {
@@ -632,7 +632,7 @@ int main() {
     printf("\n");
 
     return 0;
-}
+}                                                */
 
 
 

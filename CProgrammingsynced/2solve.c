@@ -24,7 +24,7 @@
             printf("SUM OF INDIVIDUAL DIGITS ARE =  %d \n" , sum );
 
                 return 0;
-}                 */
+}                                     */
 
                                
 
@@ -74,7 +74,8 @@
 
 
 // PRACTICAL 9
-// Write a program to find the largest of two numbers using if.              
+// Write a program to find the largest of two numbers using if.   
+/*           
                #include <stdio.h>
                         int main ()      {
 
@@ -97,7 +98,7 @@
                                    }
 
                            return 0;
-                        }
+                        }                        */
 
 
 
