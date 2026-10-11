@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form Validation</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eef2f3;
+            text-align: center;
+            margin: 50px;
+        }
+
+        form {
+            background: lightblue;
+            padding: 25px;
+            max-width: 300px;
+            margin: auto;
+            border-radius: 8px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #176b87;
+            color: lightcyan;
+            border: none;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 15px;
+            color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Login Form</h1>
+
+    <form onsubmit="return validateForm()">
+
+        <input type="text" id="username"
+               placeholder="Enter Username">
+
+        <input type="password" id="password"
+               placeholder="Enter Password">
+
+        <button type="submit">Login</button>
+
+        <p id="message"></p>
+
+    </form>
+
+    <script>
+        function validateForm() {
+            let user = document.getElementById("username").value.trim();
+            let pass = document.getElementById("password").value;
+
+            if (user === "" || pass.trim() === "") {
+                document.getElementById("message").innerHTML =
+                    "Please fill in both fields.";
+                return false;
+            } else {
+                document.getElementById("message").innerHTML =
+                    "Form validated successfully!";
+                return false;
+            }
+        }
+    </script>
+
+</body>
+</html>

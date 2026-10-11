@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fluid Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        header, footer {
+            background: #176b87;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: #12345a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            gap: 2%;
+            width: 94%;
+            margin: 3% auto;
+        }
+
+        .left, .right {
+            padding: 20px;
+        }
+
+        .left {
+            flex: 1;
+            background: #d9eaf2;
+        }
+
+        .right {
+            flex: 2;
+            background: #f2f2f2;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Responsive Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container" id="home">
+        <div class="left">
+            <h2>Our Menu</h2>
+            <p>Web Design</p>
+            <p>Development</p>
+            <p>Technical Support</p>
+        </div>
+
+        <div class="right" id="services">
+            <h2>Welcome</h2>
+            <p>This webpage uses a fluid layout to adjust to different screen sizes.</p>
+
+            <h3 id="contact">Contact Us</h3>
+            <p>Email: contact@example.com</p>
+        </div>
+    </div>
+
+    <footer>
+        My Responsive Website
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Text</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin: 50px;
+            background-color: #f0f4f8;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #176b87;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="heading">Welcome to My Webpage</h1>
+
+    <p id="message">Click the button to change this text.</p>
+
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("heading").innerHTML =
+                "Hello, Welcome!";
+
+            document.getElementById("message").innerHTML =
+                "The text has been changed successfully.";
+        }
+    </script>
+
+</body>
+</html>
